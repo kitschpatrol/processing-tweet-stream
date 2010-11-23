@@ -3,9 +3,8 @@
   <description>
         processingLibs. ant build file.
     </description>
-  <property name="processing" location="/Applications/Processing.app/Contents/Resources/Java/libraries"/>
-  <property name="scala.home" value="/Users/mmcbride/packages/scala-2.7.6.final"/>
-
+  <property name="processing" location="${user.home}/Documents/Processing/libraries"/>
+  <property name="scala.home" value="${user.home}/packages/scala-2.7.6.final"/>
   <property name="libraryClasspath" location="lib"/>
   <property name="javaVersion" value="1.5"/>
   <property name="author" value="Mark McBride"/>

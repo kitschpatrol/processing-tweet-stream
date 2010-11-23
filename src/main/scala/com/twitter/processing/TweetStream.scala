@@ -19,9 +19,6 @@
 
 package com.twitter.processing;
 
-
-import _root_.processing.core.PApplet
-
 import java.io.{BufferedReader, InputStream, InputStreamReader, IOException}
 import java.lang.reflect.Method
 import java.net.{ConnectException, SocketException}
@@ -62,7 +59,9 @@ trait Log {
  * @author Mark McBride
  * 
  */
-class TweetStream(parent: PApplet, host: String, port: Int, path: String, username: String, password: String) extends Log{
+class TweetStream(parent: AnyRef, host: String, port: Int, path: String, username: String, password: String) extends Log{
+
+	//println("with webtap mods");
 
   /** the version of the library */
 	val VERSION = "0.1.0"
